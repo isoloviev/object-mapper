@@ -12,6 +12,10 @@ public class Main {
         Converter converter = new Converter();
         Extension model = (Extension) converter.init(response, Extension.class);
         LOGGER.info(model);
+
+        ConverterEx converterEx = new ConverterEx();
+        model = (Extension) converterEx.init(response, Extension.class);
+        LOGGER.info(model);
     }
 
 }
